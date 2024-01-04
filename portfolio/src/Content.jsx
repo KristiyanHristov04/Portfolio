@@ -1,6 +1,7 @@
 import Typed from 'typed.js';
 import React from 'react';
 import Card from './Card.jsx'
+import { ContactMe } from './ContactMe.jsx'
 import './Content.css'
 
 export default function Content() {
@@ -99,6 +100,14 @@ export default function Content() {
                         link='https://github.com/KristiyanHristov04/WeatherApp?tab=readme-ov-file'
                         image='/src/assets/weather-app-image.png'
                     />
+                </article>
+            </section>
+
+            <section className='contact-us-section' id='contact-me'>
+                <h3 className='section-title'>Contact Me</h3>
+                <div className='title-underline'></div>
+                <article>
+                    <ContactMe />
                 </article>
             </section>
         </>
