@@ -64,7 +64,7 @@ export default function Content() {
                 </article>
             </section>
 
-            <section className='projects-section'>
+            <section className='projects-section' id='projects'>
                 <h3 className='section-title'>Projects</h3>
                 <div className='title-underline'></div>
                 <article>

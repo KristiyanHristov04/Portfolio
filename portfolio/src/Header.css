@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     border-bottom: 1px solid;
 
@@ -44,6 +48,8 @@
 .menu a {
     padding: 5px 10px;
     border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu a:hover {

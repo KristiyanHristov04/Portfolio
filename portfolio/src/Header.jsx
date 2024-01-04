@@ -24,13 +24,13 @@ export default function Header() {
                     <div className='menu-container'>
                         <ul className='menu'>
                             <li><a>Home</a></li>
-                            <li><a>Projects</a></li>
+                            <li><a href='#projects'>Projects</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                         <i className="fa-solid fa-bars" id='dropdown-menu' onClick={activateMobileMenu}></i>
                         <div className='mobile-menu'>
                             <a href='#'>Home</a>
-                            <a href='#'>Projects</a>
+                            <a href='#projects'>Projects</a>
                             <a href='#'>Contact</a>
                         </div>
                     </div>
