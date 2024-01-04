@@ -176,6 +176,30 @@
     width: 90%;
 }
 
+.projects-section {
+    margin-top: 70px;
+}
+
+.projects-section .section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.projects-section .title-underline {
+   width: 60px;
+   height: 3px;
+   background-color: #6370e2;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.projects-section article {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 @media (max-width: 800px) {
     .hero-section {
         gap: 60px;
@@ -229,5 +253,24 @@
     .education-section article:nth-child(1) div {
         width: 120px;
         height: 170px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projects-section article {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .projects-section article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-section article {
+        justify-content: center;
+        grid-template-columns: repeat(1, 300px);
     }
 }

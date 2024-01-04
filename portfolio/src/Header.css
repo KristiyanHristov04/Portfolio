@@ -7,6 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     max-width: 1000px;
+    z-index: 1000;
 }
 
 .header::before {
