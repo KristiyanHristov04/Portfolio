@@ -1,5 +1,6 @@
 .hero-section {
     padding: 0 50px;
+    margin-top: 71px;
 }
 
 .hero-section article:first-child h3 {
@@ -169,6 +170,10 @@
 
 .education-section article:nth-child(2) p {
     font-size: 18px;
+}
+
+.education-section article:nth-child(2) p:nth-of-type(2) {
+    width: 90%;
 }
 
 @media (max-width: 800px) {

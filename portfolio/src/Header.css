@@ -1,5 +1,21 @@
 .header {
     border-bottom: 1px solid;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(2px);
 }
 
 .navbar {
