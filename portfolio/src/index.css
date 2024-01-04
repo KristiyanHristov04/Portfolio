@@ -1,0 +1,11 @@
+body {
+    background-color: #100d1e;
+    color: white;
+}
+
+#root {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Poppins;
+}
+
