@@ -341,6 +341,31 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.card {
+    visibility: hidden;
+}
+
+.play-project-animation {
+    animation-name: project-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes project-animation {
+    from {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .contact-us-section {
     margin-top: 70px;
     padding: 10px;
@@ -428,6 +453,20 @@
 @media (max-width: 1100px) {
     .projects-section article {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .education-section article:nth-of-type(2) h3,
+    .education-section article:nth-of-type(2) p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .education-section article:nth-of-type(2) h3 {
+        margin-top: 20px;
+    }
+
+    .education-section article:nth-of-type(2) p:nth-of-type(1) {
+        margin-bottom: 15px;
     }
 }
 

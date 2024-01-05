@@ -2,6 +2,7 @@ import Typed from 'typed.js';
 import React from 'react';
 import Card from './Card.jsx'
 import { ContactMe } from './ContactMe.jsx'
+import { useEffect } from 'react';
 import './Content.css'
 
 export default function Content() {
@@ -19,6 +20,37 @@ export default function Content() {
             typed.destroy();
         };
     }, []);
+
+    useEffect(() => {
+        //Intersection Observer API
+        console.log('Hello');
+        const cards = document.querySelectorAll('#root .projects-section article .card');
+        console.log(cards);
+    
+        const options = {
+          root: null, //By default is the viewport(null). Can be changed.
+          threshold: 0.25, //From 0 to 1.
+          rootMargin: "0px" //Must be specified in pixels surrounded by double quotes.
+        };
+    
+        let observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              console.log(entry.target);
+              //Add animation class to this entry(card).
+              entry.target.classList.add('play-project-animation');
+    
+              //Remove this entry from the observer since it's no longer needed.
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+    
+        cards.forEach(card => {
+          observer.observe(card); //Add to the observer every card.
+        });
+      });
+    
 
     return (
         <>
