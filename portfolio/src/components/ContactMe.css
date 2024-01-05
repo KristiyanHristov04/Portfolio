@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+label,
+textarea {
+    color: white !important;
+}
+
+input[type=submit] {
+    align-self: center;
+    color: black !important;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #6370e2;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: Poppins;
+    border-radius: 5px;
+    /*
+     -webkit-appearance: none; is needed because IPhone's
+     apply styles on their own which is kinda weird... 
+    */
+    -webkit-appearance: none;
+    font-weight: 400;
+}
+
+input[type=submit]:hover {
+    box-shadow: 8px 11px 97px -6px rgba(0, 0, 99, 1);
+    background-color: #6f7dfa;
+}
