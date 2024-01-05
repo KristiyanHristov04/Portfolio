@@ -91,6 +91,92 @@
     background-color: #6f7dfa;
 }
 
+.socials li {
+    animation-name: socials-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.socials li:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.hero-section article:nth-of-type(1) h3,
+.hero-section article p {
+    animation-name: text-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.hero-section article:nth-of-type(2) h3,
+.hero-section article:nth-of-type(2) div {
+    animation-name: stack-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.btn {
+    visibility: hidden;
+    animation-name: btn-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+        filter: blur(1px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes stack-animation {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+        filter: blur(1px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes socials-animation {
+    from {
+        filter: blur(1px);
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes btn-animation {
+    from {
+        filter: blur(1px);
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .education-section {
     display: flex;
     margin-top: 70px;
