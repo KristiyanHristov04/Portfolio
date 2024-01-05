@@ -30,7 +30,7 @@ export default function Content() {
                         <li><a href='https://www.linkedin.com/in/kristiyan-hristov-2575a5239/' target='_blank'><i className="fa-brands fa-linkedin"></i></a></li>
                         <li><a href='https://github.com/KristiyanHristov04' target='_blank'><i className="fa-brands fa-github"></i></a></li>
                     </ul>
-                    <a className='btn' href='/src/assets/Kristiyan Hristov (CV) - Full-Stack CSharp Developer.pdf' download>Download CV</a>
+                    <a className='btn' href='/pdf/Kristiyan Hristov (CV) - Full-Stack CSharp Developer.pdf' download>Download CV</a>
                 </article>
                 <article>
                     <h3>Tech Stack: </h3>
@@ -44,17 +44,17 @@ export default function Content() {
                 <article>
                     <div>
                         <a href='https://softuni.bg/certificates/details/190659/bc8a1d94' target='_blank'>
-                            <img src="/src/assets/html-image.jpg" alt="certificate-image" />
+                            <img src="/images/html-image.jpg" alt="certificate-image" />
                         </a>
                     </div>
                     <div>
                         <a href='https://softuni.bg/certificates/details/199080/21a6a7c3' target='_blank'>
-                            <img src="/src/assets/js-image.jpg" alt="certificate-image" />
+                            <img src="/images/js-image.jpg" alt="certificate-image" />
                         </a>
                     </div>
                     <div>
                         <a href='https://softuni.bg/certificates/details/150803/2a597899' target='_blank'>
-                            <img src="/src/assets/oop-image.jpg" alt="certificate-image" />
+                            <img src="/images/oop-image.jpg" alt="certificate-image" />
                         </a>
                     </div>
                 </article>
@@ -73,7 +73,7 @@ export default function Content() {
                         name='Coding Trivia'
                         description='Quiz Themed Website with questions about both C# and JavaScript programming languages. Built with HTML, CSS and JS.'
                         link='https://github.com/KristiyanHristov04/CodingTrivia'
-                        image='/src/assets/coding-trivia-image.png'
+                        image='/images/coding-trivia-image.png'
                         isHosted={true}
                         url='https://codingtrivia2023.netlify.app/'
                     />
@@ -82,7 +82,7 @@ export default function Content() {
                         name='Fitness'
                         description='Landing page made with educational purposes built with HTML, CSS and JS.'
                         link='https://github.com/KristiyanHristov04/Fitness-ResponsiveWebsite?tab=readme-ov-file'
-                        image='/src/assets/fitness-main.jpg'
+                        image='/images/fitness-main.jpg'
                         isHosted={true}
                         url='https://fitnesslandingpagebg.netlify.app/'
                     />
@@ -91,14 +91,14 @@ export default function Content() {
                         name='Car Renting System'
                         description='Web application made with ASP.NET Core MVC. It fully incorporates all CRUD operations.'
                         link='https://github.com/KristiyanHristov04/CarRentingSystem-ASP.NET-MVC?tab=readme-ov-file'
-                        image='/src/assets/car-renting-system-mvc-image.jpg'
+                        image='/images/car-renting-system-mvc-image.jpg'
                     />
 
                     <Card
                         name='Weather App'
                         description='Weather Application using OpenWeather API made with Windows Forms (.NET 6.0).'
                         link='https://github.com/KristiyanHristov04/WeatherApp?tab=readme-ov-file'
-                        image='/src/assets/weather-app-image.png'
+                        image='/images/weather-app-image.png'
                     />
                 </article>
             </section>

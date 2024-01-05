@@ -31,7 +31,7 @@ export default function Header() {
                     <p><i className="fa-solid fa-code"></i> Kristiyan Hristov</p>
                     <div className='menu-container'>
                         <ul className='menu'>
-                            <li><a>Home</a></li>
+                            <li><a href='#'>Home</a></li>
                             <li><a href='#projects'>Projects</a></li>
                             <li><a href='#contact-me'>Contact Me</a></li>
                         </ul>
