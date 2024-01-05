@@ -197,7 +197,7 @@
 }
 
 .contact-us-section .title-underline {
-    height: 3.9px;
+    height: 4px;
 }
 
 .projects-section article {
@@ -259,6 +259,10 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .contact-us-section .title-underline {
+        height: 2.5px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -304,3 +308,4 @@
         grid-template-columns: repeat(1, 300px);
     }
 }
+
