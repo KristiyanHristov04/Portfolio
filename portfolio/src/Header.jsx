@@ -4,7 +4,15 @@ import './Header.css'
 function activateMobileMenu() {
     const dropDownMenu = document.getElementById('dropdown-menu');
     const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-    
+    const mobileMenuLinks = Array.from(mobileMenu.children);
+
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.display = 'none';
+            dropDownMenu.classList.replace('fa-xmark', 'fa-bars');
+        });
+    })
+
     if (mobileMenu.style.display == 'none') {
         mobileMenu.style.display = 'block';
         dropDownMenu.classList.replace('fa-bars', 'fa-xmark');

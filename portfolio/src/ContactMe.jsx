@@ -23,8 +23,8 @@ export const ContactMe = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <MUI.TextField id="filled-basic" label="Username" variant="filled" name="user_name" required type='text' />
-      <MUI.TextField id="filled-basic" label="Email" variant="filled" name="user_email" required type='email' />
+      <MUI.TextField id="filled-basic" label="Username" variant="filled" name="user_name" required type='text' autoComplete='off' />
+      <MUI.TextField id="filled-basic" label="Email" variant="filled" name="user_email" required type='email' autoComplete='off' />
       <MUI.TextField
           id="filled-multiline-static"
           label="Message"
