@@ -31,13 +31,13 @@ export default function Header() {
                     <p><i className="fa-solid fa-code"></i> Kristiyan Hristov</p>
                     <div className='menu-container'>
                         <ul className='menu'>
-                            <li><a href='#'>Home</a></li>
+                            <li><a href='#'>Intro</a></li>
                             <li><a href='#projects'>Projects</a></li>
                             <li><a href='#contact-me'>Contact Me</a></li>
                         </ul>
                         <i className="fa-solid fa-bars" id='dropdown-menu' onClick={activateMobileMenu}></i>
                         <div className='mobile-menu'>
-                            <a href='#'>Home</a>
+                            <a href='#'>Intro</a>
                             <a href='#projects'>Projects</a>
                             <a href='#contact-me'>Contact Me</a>
                         </div>
