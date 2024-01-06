@@ -26,31 +26,31 @@ export default function Content() {
         console.log('Hello');
         const cards = document.querySelectorAll('#root .projects-section article .card');
         console.log(cards);
-    
+
         const options = {
-          root: null, //By default is the viewport(null). Can be changed.
-          threshold: 0.25, //From 0 to 1.
-          rootMargin: "0px" //Must be specified in pixels surrounded by double quotes.
+            root: null, //By default is the viewport(null). Can be changed.
+            threshold: 0.25, //From 0 to 1.
+            rootMargin: "0px" //Must be specified in pixels surrounded by double quotes.
         };
-    
+
         let observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              console.log(entry.target);
-              //Add animation class to this entry(card).
-              entry.target.classList.add('play-project-animation');
-    
-              //Remove this entry from the observer since it's no longer needed.
-              observer.unobserve(entry.target);
-            }
-          });
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target);
+                    //Add animation class to this entry(card).
+                    entry.target.classList.add('play-project-animation');
+
+                    //Remove this entry from the observer since it's no longer needed.
+                    observer.unobserve(entry.target);
+                }
+            });
         }, options);
-    
+
         cards.forEach(card => {
-          observer.observe(card); //Add to the observer every card.
+            observer.observe(card); //Add to the observer every card.
         });
-      });
-    
+    });
+
 
     return (
         <>
@@ -132,6 +132,15 @@ export default function Content() {
                         link='https://github.com/KristiyanHristov04/WeatherApp?tab=readme-ov-file'
                         image='/images/weather-app-image.png'
                     />
+
+                    {/* <Card
+                        name='Portfolio'
+                        description='This portfolio is made using HTML, CSS, VanillaJS, Material UI and ReactJS.'
+                        link='https://github.com/KristiyanHristov04/Portfolio'
+                        image='/images/portfolio-image.png'
+                        isHosted={true}
+                        url='https://portfolio-kristiyanhristov.netlify.app/'
+                    />   */}
                 </article>
             </section>
 
