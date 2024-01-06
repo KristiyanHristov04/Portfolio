@@ -1,6 +1,6 @@
 # Portfolio
 
-Access the portfolio from here -> https://portfolio-kristiyanhristov.netlify.app/#
+Access the portfolio from here -> https://portfolio-kristiyanhristov.netlify.app/
 
 ### Description
 This portfolio is made using HTML, CSS, VanillaJS, Material UI and ReactJS. For the layout I used flexbox and grid. For the contact form I managed to use the service that EmailJS provide for sending emails.
