@@ -103,7 +103,7 @@ export default function Content() {
                 <article>
                     <Card
                         name='Coding Trivia'
-                        description='Quiz Themed Website with questions about both C# and JavaScript programming languages. Built with HTML, CSS and JS.'
+                        description='Quiz-themed website featuring questions about both C# and JavaScript programming languages. Made using HTML, CSS and JavaScript.'
                         link='https://github.com/KristiyanHristov04/CodingTrivia'
                         image='/images/coding-trivia-image.png'
                         isHosted={true}

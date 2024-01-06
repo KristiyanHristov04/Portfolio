@@ -46,6 +46,7 @@
 }
 
 .hero-section article:nth-child(2) span {
+    font-weight: bold;
     font-size: 40px;
     background: linear-gradient(to right, #5762c6, #6370e2, #6f7dfa);
     background-clip: text;
