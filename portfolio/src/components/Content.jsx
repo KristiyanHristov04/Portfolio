@@ -29,7 +29,7 @@ export default function Content() {
 
         const options = {
             root: null, //By default is the viewport(null). Can be changed.
-            threshold: 0.25, //From 0 to 1.
+            threshold: 0.15, //From 0 to 1.
             rootMargin: "0px" //Must be specified in pixels surrounded by double quotes.
         };
 
