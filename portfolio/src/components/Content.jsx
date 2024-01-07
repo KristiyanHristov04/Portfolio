@@ -2,13 +2,13 @@ import Typed from 'typed.js';
 import React from 'react';
 import Card from './Card.jsx'
 import { ContactMe } from './ContactMe.jsx'
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import './Content.css'
 
 export default function Content() {
-    const el = React.useRef(null);
+    const el = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const typed = new Typed(el.current, {
             strings: ['C#', '.NET', 'ASP.NET', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'jQuery'],
             typeSpeed: 100,
@@ -21,11 +21,12 @@ export default function Content() {
         };
     }, []);
 
+    //useEffect(hook) runs in this case when the component is attached to the DOM.
+    //If we don't use useEffect this won't work because our observer API will try to
+    //make changes over something that is currently not on the page(does not exist)!
     useEffect(() => {
         //Intersection Observer API
-        console.log('Hello');
         const cards = document.querySelectorAll('#root .projects-section article .card');
-        console.log(cards);
 
         const options = {
             root: null, //By default is the viewport(null). Can be changed.
@@ -36,7 +37,6 @@ export default function Content() {
         let observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry.target);
                     //Add animation class to this entry(card).
                     entry.target.classList.add('play-project-animation');
 
@@ -49,7 +49,8 @@ export default function Content() {
         cards.forEach(card => {
             observer.observe(card); //Add to the observer every card.
         });
-    });
+
+    }, []);
 
 
     return (
