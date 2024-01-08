@@ -235,7 +235,7 @@
 }
 
 .contact-us-section .title-underline {
-    height: 4px;
+    height: 3px;
 }
 
 .projects-section article {
@@ -408,10 +408,6 @@
     .education-section article:nth-child(2) p:nth-of-type(2) {
         width: 80%;
         margin: 0 auto;
-    }
-
-    .contact-us-section .title-underline {
-        height: 2.5px;
     }
 }
 
