@@ -10,7 +10,7 @@ export default function Content() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['C#', '.NET', 'ASP.NET', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'jQuery'],
+            strings: ['C#', '.NET', 'ASP.NET', 'EF Core', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'jQuery'],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
@@ -76,18 +76,18 @@ export default function Content() {
             <section className='education-section'>
                 <article>
                     <div>
-                        <a href='https://softuni.bg/certificates/details/190659/bc8a1d94' target='_blank'>
-                            <img src="/images/html-image.jpg" alt="certificate-image" />
-                        </a>
-                    </div>
-                    <div>
                         <a href='https://softuni.bg/certificates/details/199080/21a6a7c3' target='_blank'>
                             <img src="/images/js-image.jpg" alt="certificate-image" />
                         </a>
                     </div>
                     <div>
-                        <a href='https://softuni.bg/certificates/details/150803/2a597899' target='_blank'>
-                            <img src="/images/oop-image.jpg" alt="certificate-image" />
+                        <a href='https://softuni.bg/certificates/details/214250/b1d46c0b' target='_blank'>
+                            <img src="/images/asp.net-advanced.jpg" alt="certificate-image" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href='https://softuni.bg/certificates/details/164925/08ec44c2' target='_blank'>
+                            <img src="/images/entity-framework-core.jpg" alt="certificate-image" />
                         </a>
                     </div>
                 </article>
