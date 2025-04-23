@@ -76,8 +76,8 @@ export default function Content() {
             <section className='education-section'>
                 <article>
                     <div>
-                        <a href='https://softuni.bg/certificates/details/199080/21a6a7c3' target='_blank'>
-                            <img src="/images/js-image.jpg" alt="certificate-image" />
+                        <a href='https://softuni.bg/certificates/details/242161/35f92b0f' target='_blank'>
+                            <img src="/images/reactjs.jpg" alt="certificate-image" />
                         </a>
                     </div>
                     <div>
@@ -103,12 +103,42 @@ export default function Content() {
                 <div className='title-underline'></div>
                 <article>
                     <Card
+                        name='Social Media'
+                        description='A social media platform  built with ASP.NET Core for posting, reporting, chatting, and sharing announcements, with built-in moderation and role management.'
+                        link='https://github.com/KristiyanHristov04/SocialMedia-ASP.NET-Core-MVC'
+                        image='/images/socialmedia.png'
+                    />
+
+                    <Card
+                        name='MusicApp'
+                        description='A modern React + Supabase app for managing and exploring your favorite music and artists.'
+                        link='https://github.com/KristiyanHristov04/ReactMusicApp'
+                        image='/images/musicapp.png'
+                        isHosted={true}
+                        url='https://react-music-app-delta.vercel.app/'
+                    />
+
+                    <Card
+                        name='Car Renting System'
+                        description='Web application made with ASP.NET Core MVC. It fully incorporates all CRUD operations.'
+                        link='https://github.com/KristiyanHristov04/CarRentingSystem-ASP.NET-MVC?tab=readme-ov-file'
+                        image='/images/car-renting-system-mvc-image.jpg'
+                    />
+
+                    <Card
                         name='Coding Trivia'
                         description='Quiz-themed website featuring questions about both C# and JavaScript programming languages. Made using HTML, CSS and JavaScript.'
                         link='https://github.com/KristiyanHristov04/CodingTrivia'
                         image='/images/coding-trivia-image.png'
                         isHosted={true}
                         url='https://codingtrivia2023.netlify.app/'
+                    />
+
+                    <Card
+                        name='Weather App'
+                        description='Weather Application using OpenWeather API made with Windows Forms (.NET 6.0).'
+                        link='https://github.com/KristiyanHristov04/WeatherApp?tab=readme-ov-file'
+                        image='/images/weather-app-image.png'
                     />
 
                     <Card
@@ -121,27 +151,20 @@ export default function Content() {
                     />
 
                     <Card
-                        name='Car Renting System'
-                        description='Web application made with ASP.NET Core MVC. It fully incorporates all CRUD operations.'
-                        link='https://github.com/KristiyanHristov04/CarRentingSystem-ASP.NET-MVC?tab=readme-ov-file'
-                        image='/images/car-renting-system-mvc-image.jpg'
+                        name='Movies'
+                        description='Laravel app built with Breeze. Users manage their own movies. Includes CRUD, pagination, sorting, and filtering.'
+                        link='https://github.com/KristiyanHristov04/Movies-Laravel/tree/main'
+                        image='/images/movies.png'
                     />
 
                     <Card
-                        name='Weather App'
-                        description='Weather Application using OpenWeather API made with Windows Forms (.NET 6.0).'
-                        link='https://github.com/KristiyanHristov04/WeatherApp?tab=readme-ov-file'
-                        image='/images/weather-app-image.png'
-                    />
-
-                    {/* <Card
                         name='Portfolio'
                         description='This portfolio is made using HTML, CSS, VanillaJS, Material UI and ReactJS.'
                         link='https://github.com/KristiyanHristov04/Portfolio'
                         image='/images/portfolio-image.png'
                         isHosted={true}
                         url='https://portfolio-kristiyanhristov.netlify.app/'
-                    />   */}
+                    />
                 </article>
             </section>
 
