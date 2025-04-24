@@ -5,6 +5,7 @@
     background-color: #1a1d35;
     border-radius: 5px;
     overflow: hidden;
+    border: 1px solid rgba(42 92 204 / 15%);
 }
 
 .card-header {
@@ -16,6 +17,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.card-header img:hover {
+    transform: scale(1.1);
 }
 
 .card-content {

@@ -159,7 +159,7 @@ export default function Content() {
 
                     <Card
                         name='Portfolio'
-                        description='This portfolio is made using HTML, CSS, VanillaJS, Material UI and ReactJS.'
+                        description='This portfolio is made using HTML, CSS, Material UI and ReactJS.'
                         link='https://github.com/KristiyanHristov04/Portfolio'
                         image='/images/portfolio-image.png'
                         isHosted={true}
