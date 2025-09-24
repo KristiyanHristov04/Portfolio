@@ -10,7 +10,7 @@ export default function Content() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['C#', '.NET', 'ASP.NET', 'EF Core', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'jQuery'],
+            strings: ['C#', '.NET', 'ASP.NET', 'EF Core', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'TailwindCSS'],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
@@ -81,13 +81,13 @@ export default function Content() {
                         </a>
                     </div>
                     <div>
-                        <a href='https://softuni.bg/certificates/details/214250/b1d46c0b' target='_blank'>
-                            <img src="/images/asp.net-advanced.jpg" alt="certificate-image" />
+                        <a href='https://softuni.bg/certificates/details/250268/f95e9ec9' target='_blank'>
+                            <img src="/images/diploma.jpg" alt="certificate-image" />
                         </a>
                     </div>
                     <div>
-                        <a href='https://softuni.bg/certificates/details/164925/08ec44c2' target='_blank'>
-                            <img src="/images/entity-framework-core.jpg" alt="certificate-image" />
+                        <a href='https://softuni.bg/certificates/details/249637/6042dcde' target='_blank'>
+                            <img src="/images/containers-and-cloud.jpg" alt="certificate-image" />
                         </a>
                     </div>
                 </article>
@@ -126,12 +126,12 @@ export default function Content() {
                     />
 
                     <Card
-                        name='Coding Trivia'
-                        description='Quiz-themed website featuring questions about both C# and JavaScript programming languages. Made using HTML, CSS and JavaScript.'
-                        link='https://github.com/KristiyanHristov04/CodingTrivia'
-                        image='/images/coding-trivia-image.png'
+                        name='OceanPure'
+                        description='Landing page made for educational purposes built with ReactJS and TailwindCSS.'
+                        link='https://github.com/KristiyanHristov04/Landing-Page-Tailwind-v4'
+                        image='/images/oceanpure.png'
                         isHosted={true}
-                        url='https://codingtrivia2023.netlify.app/'
+                        url='https://oceansea.netlify.app/'
                     />
 
                     <Card
@@ -142,13 +142,14 @@ export default function Content() {
                     />
 
                     <Card
-                        name='Fitness'
-                        description='Landing page made with educational purposes built with HTML, CSS and JS.'
-                        link='https://github.com/KristiyanHristov04/Fitness-ResponsiveWebsite?tab=readme-ov-file'
-                        image='/images/fitness-main.jpg'
+                        name='Coding Trivia'
+                        description='Quiz-themed website featuring questions about both C# and JavaScript programming languages. Made using HTML, CSS and JavaScript.'
+                        link='https://github.com/KristiyanHristov04/CodingTrivia'
+                        image='/images/coding-trivia.png'
                         isHosted={true}
-                        url='https://fitnesslandingpagebg.netlify.app/'
+                        url='https://codingtrivia2023.netlify.app/'
                     />
+
 
                     <Card
                         name='Movies'
