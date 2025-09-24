@@ -10,7 +10,7 @@ export default function Content() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['C#', '.NET', 'ASP.NET', 'EF Core', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'TailwindCSS'],
+            strings: ['C#', '.NET', 'ASP.NET', 'EF Core', 'SQL', 'HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'TailwindCSS', 'Docker', 'CI/CD Pipelines', 'Cloud Infrastructure'],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
