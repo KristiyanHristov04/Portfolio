@@ -131,7 +131,7 @@ export default function Content() {
                         link='https://github.com/KristiyanHristov04/Landing-Page-Tailwind-v4'
                         image='/images/oceanpure.png'
                         isHosted={true}
-                        url='https://oceansea.netlify.app/'
+                        url='https://oceanpure.vercel.app/'
                     />
 
                     <Card
